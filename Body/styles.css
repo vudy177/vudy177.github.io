@@ -1,0 +1,293 @@
+/* ตั้งค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* รูปแบบของแถบเมนูนำทาง (navbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B97D60;
+    padding: 15px;
+}
+
+/* โลโก้ */
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* รูปแบบของลิงก์ในแถบเมนู */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* รูปแบบลิงก์เมื่อมีการโฮเวอร์ */
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+.hom{
+    background-color: #F0CCB0;
+    display: flex;
+    justify-content: center;
+    /* width: 100vh; */
+}
+.hero{
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+.hero-con{
+    margin-left: 30px;
+}
+.hero-con h3{
+    font-size: 90px;
+}
+.hero-con button{
+    margin-top: 12px;
+    display: flex;
+    border-radius: 16px;
+    background-color: #F54D3D;
+    margin-left: 60px;
+}
+.hero-con button a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 4px;
+}
+.hero img{
+    /* margin-left: 170px; */
+    max-width: 370px;
+    min-width: 250px;
+}
+.about{
+    background-color: #B97D60;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+}
+.about h3{
+    padding-top: 25px;
+    font-size: 40px;
+}
+.about p{
+    padding-top: 65px;
+    font-size: large;
+}
+.about .p1{
+    padding-top: 30px;
+}
+.about-skill{
+    background-color: #F0CCB0;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+}
+.about-skill h3{
+    padding-top: 25px;
+    font-size: 40px;
+}
+.skill--list{
+    display: flex;
+    padding-top: 135px;
+    justify-content: center;
+    list-style-type: none;
+}
+.skill--list li{
+    margin-left: 25px;
+}
+.services{
+    background-color: #B97D60;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+}
+.services h3{
+    padding-top: 25px;
+    font-size: 40px;
+}
+.services-content{
+    background-color: #F0CCB0;
+    width: 230px;
+    height: 290px;
+    align-items: center;
+    margin: 20px auto;
+}
+.services-content img{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.services-content button{
+    padding: 6px;
+    margin-top: 7px;
+    border-radius: 16px;
+}
+.portfolio{
+    background-color: #F0CCB0;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    
+}
+.portfolio h3{
+    padding-top: 25px;
+    font-size: 40px;
+}
+.portfolio-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-con{
+    background-color: #B97D60;
+    width: 230px;
+    height: 290px;
+    align-items: center;
+    margin-top: 20px ;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.portfolio-con img{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.portfolio-con button{
+    padding: 6px;
+    margin-top: 7px;
+    border-radius: 16px;
+}
+.contac {
+    background-color: #e0b3e5;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.contac-con {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.con-h h2 {
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.con-h hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contac-inp {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+    margin-left: auto;
+}
+
+.contac textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contac-inp:focus {
+    border: 2px solid #ff994f;
+}
+
+.contac-inp::placeholder {
+    color: #a9a9a9;
+}
+
+.contac-con button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.con-r img {
+    width: 500px;
+}
+
+@media (max-width:800px) {
+    .contac-inp {
+        width: 80vw;
+    }
+
+    .con-r {
+        display: none;
+    }
+}
+footer{
+    background-color: #555;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.end-contact{
+    margin-left: 13px;
+}
+.contact--email li{
+    list-style: none;
+    color: #e0b3e5;
+}
+.contact--email li img{
+    margin-right: 12px;
+    margin-top: 3px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    height: 35px;
+    color: #e0b3e5;
+    padding-top: 8px;
+}
+
+#wq{
+ max-width:100px;
+}
